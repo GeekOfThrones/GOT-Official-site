@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<head>
+	<title>Diversify</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animations.css' %}">
+	<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+	<link rel="stylesheet" href="{% static 'css/main.css' %}" class="color-switcher-link">
+	<link rel="stylesheet" href="{% static 'css/shop.css' %}" class="color-switcher-link">
+	<script src="{% static 'js/vendor/modernizr-2.6.2.min.js' %}"></script>
+	<!--[if lt IE 9]>
+		<script src="{% static 'js/vendor/html5shiv.min.js' %}"></script>
+		<script src="{% static 'js/vendor/respond.min.js' %}"></script>
+		<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="http://webdesign-finder.com/html/diversify/">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+            {% block content %}{% endblock %}
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+    <script src="{% static 'js/compressed.js' %}"></script>
+	<script src="{% static 'js/selectize.min.js' %}"></script>
+	<script src="{% static 'js/main.js' %}"></script>
+	<script src="{% static 'js/switcher.js' %}"></script>
+</body>
+
+
+<!-- Mirrored from webdesign-finder.com/html/diversify/index-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Jul 2018 07:13:11 GMT -->
+</html>
